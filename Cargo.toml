@@ -30,23 +30,23 @@ lance-testing = { path = "../lance/rust/lance-testing" }
 lance-datafusion = { path = "../lance/rust/lance-datafusion" }
 lance-encoding = { path = "../lance/rust/lance-encoding" }
 # Note that this one does not include pyarrow
-arrow = { version = "54.1", optional = false }
-arrow-array = "54.1"
-arrow-data = "54.1"
-arrow-ipc = "54.1"
-arrow-ord = "54.1"
-arrow-schema = "54.1"
-arrow-arith = "54.1"
-arrow-cast = "54.1"
+arrow = { version = "55.1", optional = false }
+arrow-array = "55.1"
+arrow-data = "55.1"
+arrow-ipc = "55.1"
+arrow-ord = "55.1"
+arrow-schema = "55.1"
+arrow-arith = "55.1"
+arrow-cast = "55.1"
 async-trait = "0"
-datafusion = { version = "46.0", default-features = false }
-datafusion-catalog = "46.0"
-datafusion-common = { version = "46.0", default-features = false }
-datafusion-execution = "46.0"
-datafusion-expr = "46.0"
-datafusion-physical-plan = "46.0"
+datafusion = { version = "47.0", default-features = false }
+datafusion-catalog = "47.0"
+datafusion-common = { version = "47.0", default-features = false }
+datafusion-execution = "47.0"
+datafusion-expr = "47.0"
+datafusion-physical-plan = "47.0"
 env_logger = "0.11"
-half = { "version" = "=2.4.1", default-features = false, features = [
+half = { "version" = "2.1", default-features = false, features = [
     "num-traits",
 ] }
 futures = "0"
@@ -61,9 +61,7 @@ rand = "0.8"
 regex = "1.10"
 lazy_static = "1"
 semver = "1.0.25"
-# Temporary pins to work around downstream issues
-# https://github.com/apache/arrow-rs/commit/2fddf85afcd20110ce783ed5b4cdeb82293da30b
-chrono = "=0.4.39"
+chrono = "0.4.41"
 # https://github.com/RustCrypto/formats/issues/1684
 base64ct = "=1.6.0"
 # Workaround for: https://github.com/eira-fransham/crunchy/issues/13
